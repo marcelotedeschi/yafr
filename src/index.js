@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import reducers from './reducers';
 import App from './App';
+import NewsList from './components/news_list';
 
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
@@ -21,7 +22,7 @@ ReactDOM.render(
    <BrowserRouter>
       <div>
         <Switch>
-          <Route path="/opa" component={App} />
+          <Route path="/" component={NewsList} />
         </Switch>
       </div>
    </BrowserRouter>
