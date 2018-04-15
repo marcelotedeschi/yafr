@@ -10,8 +10,8 @@ export default function(state = null, action){
         case FETCH_NEWS:
             //console.log(_.mapKeys(action.payload.data.items, 'title'));
             //return _.mapKeys(action.payload.data.items, 'title');
-            console.log(action.payload.data.items);
-            return action.payload.data.items;
+            console.log(action.payload.items);
+            return action.payload.items;
 
         default:
             return state;

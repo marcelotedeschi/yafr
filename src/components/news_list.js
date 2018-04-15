@@ -15,15 +15,15 @@ class NewsList extends Component {
         if(this.props.news){
             return this.props.news.map((news) => {
                 return (
-                    
+
                     <li key={news.title} className="card">
                         <div className="card-header">
-                            {news.author}
+                            {news.title}
                         </div>
                         <div className="card-body">
-                        <h5 className="card-title">{news.title}</h5>
-                        <p hgclassName="card-text">{news.description}</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                            <h5 className="card-title">{news.title}</h5>
+                            <p className="card-text">{news.description}</p>
+                            <a href="#" className="btn btn-primary">Go somewhere</a>
                         </div>
                     </li>
                 );
