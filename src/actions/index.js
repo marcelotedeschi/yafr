@@ -1,8 +1,8 @@
 import Feed from 'rss-to-json';
 
-export const FETCH_NEWS = 'FETCH_NEWS';
+export const FETCH_FEED = 'FETCH_FEED';
 
-export function fetchNews(callback) {
+export function fetchFeed(callback) {
   const request = new Promise((resolve, reject) => {
     Feed.load('http://rss.nytimes.com/services/xml/rss/nyt/Americas.xml', function(err, rss) {
       if (rss) {
@@ -11,5 +11,5 @@ export function fetchNews(callback) {
     })
   });
 
-  return { type: FETCH_NEWS, payload: request }
+  return { type: FETCH_FEED, payload: request }
 }
