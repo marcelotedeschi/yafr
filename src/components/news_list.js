@@ -5,7 +5,6 @@ import { fetchNews } from '../actions';
 class NewsList extends Component {
   componentDidMount() {
     this.props.fetchNews();
-    console.log(this.props.news);
   }
 
   renderNews() {
