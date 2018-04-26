@@ -13,7 +13,7 @@
     "react-scripts": "1.1.4",
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3",
-    "rss-to-json": "^1.0.4"
+    "xml2js": "^0.4.19"
   },
   "scripts": {
     "start": "react-scripts start",
